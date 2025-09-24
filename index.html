@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemutar Lagu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="audio-player">
+        <h1>Pemutar Lagu</h1>
+        <audio id="myAudio" controls>
+            <!-- Sumber audio pertama yang akan dimuat -->
+            <source src="cukup-ziva-magnolya.mp3" type="audio/mpeg">
+            <!-- Tambahkan tag <source> lain untuk lagu lainnya di sini -->
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+        <p>Sedang diputar: <span id="currentSong">CUKUP - ZIVA MAGNOLYA</span></p>
+    </div>
+    <!-- JavaScript akan diletakkan di sini -->
+</body>
+</html> 
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.audio-player {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+audio {
+    margin-top: 1rem;
+    width: 300px; /* Lebar pemutar audio dapat disesuaikan */
+}
